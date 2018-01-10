@@ -7,8 +7,8 @@ if (!isset($_SESSION['zalogowanyuser']))
     exit();
 }    
 ?>
-<!DOCTYPE html>
-<html lang="pl-Pl">
+    <!DOCTYPE html>
+    <html lang="pl-Pl">
 
     <head>
         <meta charset="utf-8">
@@ -17,11 +17,11 @@ if (!isset($_SESSION['zalogowanyuser']))
             Seriws samochodów
         </title>
         <link rel="stylesheet" href="../style/style.css" />
-        <link rel="stylesheet"  title="main" href="../style/pracownicy.css"/>
+        <link rel="stylesheet" title="main" href="../style/pracownicy.css" />
         <link rel="stylesheet" href="../style/strona-glowna.css" type="text/css">
         <link rel="stylesheet" title="main" href="../style/tabelki.css" type="text/css">
         <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
-        <link rel="stylesheet"  href="../style/dodruku.css" type="text/css" media="print">
+        <link rel="stylesheet" href="../style/dodruku.css" type="text/css" media="print">
         <script type="text/javascript" src="../wybor.js"></script>
         <script src="../jquery-3.2.1.min.js"></script>
     </head>
@@ -29,12 +29,14 @@ if (!isset($_SESSION['zalogowanyuser']))
     <body>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#wybory').on('change', function(){
+                $('#wybory').on('change', function() {
                     setStyle(this.value);
-                })});
+                })
+            });
+
         </script>
-        <div class="stylelista" id="stylelista"> 
-            <select name="" id="wybory" >
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
                 <option value="" selected disabled>Wybierz styl</option>
                 <option value="main" >Główny</option>
                 <option value="alt" >Alternatywny</option>
@@ -95,7 +97,7 @@ if (!isset($_SESSION['zalogowanyuser']))
 
         echo"</table>"
         ?>
-        
+
     </body>
 
-</html>
+    </html>

@@ -84,7 +84,7 @@ if (isset($_POST['what']))
         <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
         <script type="text/javascript" src="../wybor.js"></script>
         <script src="data.js" type="text/javascript">
-        
+
 
         </script>
         <script src="../jquery-3.2.1.min.js"></script>
@@ -119,28 +119,32 @@ if (isset($_POST['what']))
 
 
             });
-            $(document).ready(function(){
-            $("select").click(function() {
-                var open = $(this).data("isopen");
-                if(open && $(this).val()=="nowysamochod.php") {
-                    window.location.href = $(this).val()
-                }
-                //set isopen to opposite so next time when use clicked select box
-                //it wont trigger this event
-                $(this).data("isopen", !open);
-            });})
+            $(document).ready(function() {
+                $("select").click(function() {
+                    var open = $(this).data("isopen");
+                    if (open && $(this).val() == "nowysamochod.php") {
+                        window.location.href = $(this).val()
+                    }
+                    //set isopen to opposite so next time when use clicked select box
+                    //it wont trigger this event
+                    $(this).data("isopen", !open);
+                });
+            })
+
         </script>
     </head>
 
     <body onload="adddate();">
         <script type="text/javascript">
             $(document).ready(function() {
-                $('#wybory').on('change', function(){
+                $('#wybory').on('change', function() {
                     setStyle(this.value);
-                })});
+                })
+            });
+
         </script>
-        <div class="stylelista" id="stylelista"> 
-            <select name="" id="wybory" >
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
                 <option value="">Wybierz styl</option>
                 <option value="main" >main</option>
                 <option value="alt" >alt</option>

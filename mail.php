@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_POST['opis'])){
 require_once "conect.php";

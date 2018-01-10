@@ -7,61 +7,63 @@ if (!isset($_SESSION['zalogowanyuser']))
     exit();
 }    
 ?>
-<!DOCTYPE html>
-<html lang="pl-Pl">
+    <!DOCTYPE html>
+    <html lang="pl-Pl">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Strona serwisu samochodowego">
-    <title>
-        Seriws samochodów
-    </title>
-    <link rel="stylesheet" title="main"href="../style/pracownicy.css" />
-    <link rel="stylesheet" href="../style/strona-glowna.css" type="text/css">
-    <link rel="stylesheet" title="main" href="../style/tabelki.css" type="text/css">
-    <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
-    <link rel="stylesheet"  href="../style/dodruku.css" type="text/css" media="print">
-    <script type="text/javascript" src="../wybor.js"></script>
-    <script src="../jquery-3.2.1.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Strona serwisu samochodowego">
+        <title>
+            Seriws samochodów
+        </title>
+        <link rel="stylesheet" title="main" href="../style/pracownicy.css" />
+        <link rel="stylesheet" href="../style/strona-glowna.css" type="text/css">
+        <link rel="stylesheet" title="main" href="../style/tabelki.css" type="text/css">
+        <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
+        <link rel="stylesheet" href="../style/dodruku.css" type="text/css" media="print">
+        <script type="text/javascript" src="../wybor.js"></script>
+        <script src="../jquery-3.2.1.min.js"></script>
 
-</head>
+    </head>
 
-<body>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('select').on('change', function(){
-                setStyle(this.value);
-            })});
-    </script>
-    <div class="stylelista" id="stylelista"> 
-        <select name="" id="wybory" >
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('select').on('change', function() {
+                    setStyle(this.value);
+                })
+            });
+
+        </script>
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
             <option value="">Wybierz styl</option>
             <option value="main" >main</option>
             <option value="alt" >alt</option>
         </select>
 
-    </div>
-    <nav>
-
-
-        <div class="menu">
-
-            <a id="zdjecie" href="../index.php"><img src="../galeria/menu.png" alt="zdjecie menu"></a>
-            <a id="zdjecie" href="pracownicy.php"><img src="../galeria/e-panel-logo.png" alt="zdjecie menu"></a>
-
-            <ol>
-                <li><a class="page-scroll" href="nowanaprawa.php">Nowa naprawa</a></li>
-                <li><a class="page-scroll" href="naprawa.php">Zakończ naprawę</a></li>
-                <li><a class="page-scroll" href="spisnapraw.php">Moje naprawy</a></li>
-                <li><a class="page-scroll" href="../logout.php">Wyloguj</a></li>
-            </ol>
-
         </div>
-        <div class="pusty"></div>
+        <nav>
 
-    </nav>
-    <h2>Moje naprawy</h2>
-    <?php
+
+            <div class="menu">
+
+                <a id="zdjecie" href="../index.php"><img src="../galeria/menu.png" alt="zdjecie menu"></a>
+                <a id="zdjecie" href="pracownicy.php"><img src="../galeria/e-panel-logo.png" alt="zdjecie menu"></a>
+
+                <ol>
+                    <li><a class="page-scroll" href="nowanaprawa.php">Nowa naprawa</a></li>
+                    <li><a class="page-scroll" href="naprawa.php">Zakończ naprawę</a></li>
+                    <li><a class="page-scroll" href="spisnapraw.php">Moje naprawy</a></li>
+                    <li><a class="page-scroll" href="../logout.php">Wyloguj</a></li>
+                </ol>
+
+            </div>
+            <div class="pusty"></div>
+
+        </nav>
+        <h2>Moje naprawy</h2>
+        <?php
        
         $iduser=$_SESSION['iduser'];
      require_once "../conect.php";
@@ -93,6 +95,6 @@ if (!isset($_SESSION['zalogowanyuser']))
    echo"</table>"
        ?>
 
-</body>
+    </body>
 
-</html>
+    </html>

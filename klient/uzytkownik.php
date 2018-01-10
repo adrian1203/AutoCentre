@@ -7,8 +7,8 @@
 		exit();
 	}
 	?>
-<!DOCTYPE html>
-<html lang="pl-Pl">
+    <!DOCTYPE html>
+    <html lang="pl-Pl">
 
     <head>
         <meta charset="utf-8">
@@ -16,7 +16,7 @@
         <title>
             Seriws samochodów
         </title>
-<!--        <link rel="stylesheet" title="main" href="../style/fixedmenu.css" type="text/css">-->
+        <!--        <link rel="stylesheet" title="main" href="../style/fixedmenu.css" type="text/css">-->
         <link rel="stylesheet" title="main" href="../style/pracownicy.css" type="text/css">
         <link rel="stylesheet" href="../style/strona-glowna.css" type="text/css">
         <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
@@ -28,12 +28,14 @@
     <body>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('select').on('change', function(){
+                $('select').on('change', function() {
                     setStyle(this.value);
-                })});
+                })
+            });
+
         </script>
-        <div class="stylelista" id="stylelista"> 
-            <select name="" id="wybory" >
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
                 <option value="" disabled selected >Wybierz styl</option>
                 <option value="main" >main</option>
                 <option value="alt" >alt</option>
@@ -46,14 +48,14 @@
             <div class="menu">
 
                 <a id="zdjecie" href="../index.php"><img src="../galeria/menu.png" alt="zdjecie menu"></a>
-                <a href="uzytkownik.php" class="btn btn-default btn-xl wow tada" id="info-button" ><img src="../galeria/e-panel-logo.png" alt="zdjecie menu"></a>
+                <a href="uzytkownik.php" class="btn btn-default btn-xl wow tada" id="info-button"><img src="../galeria/e-panel-logo.png" alt="zdjecie menu"></a>
 
                 <ol>
-                    <li><a  href="mojenaprawy.php">Moje naprawy</a></li>
-                    <li><a  href="mojesamochody.php">Moje samochody</a></li>
+                    <li><a href="mojenaprawy.php">Moje naprawy</a></li>
+                    <li><a href="mojesamochody.php">Moje samochody</a></li>
                     <li><a class="page-scroll" href="customer_car.php">Dodaj samochód</a></li>
                     <li><a class="page-scroll" href="../logout.php">Wyloguj</a></li>
-                    
+
                 </ol>
 
             </div>
@@ -76,4 +78,4 @@
 
     </body>
 
-</html>
+    </html>

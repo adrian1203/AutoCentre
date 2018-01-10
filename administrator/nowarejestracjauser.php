@@ -7,7 +7,7 @@ if (!isset($_SESSION['zalogowanyuser']))
     exit();
 }    
 ?>
-<?php
+    <?php
 
 
 $email = $_POST['email'];
@@ -150,4 +150,3 @@ if (isset($_POST['email']))
     }
 
 }
-

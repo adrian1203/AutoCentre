@@ -21,11 +21,11 @@ session_start();
     <link rel="stylesheet" title="main" href="style/pracownicy.css" type="text/css" />
     <link rel="stylesheet" title="main" href="style/header.css" type="text/css" />
     <link rel="stylesheet" href="style/strona-glowna.css" type="text/css" />
-    <link rel="stylesheet" title="main"href="style/opis.css" type="text/css" />
+    <link rel="stylesheet" title="main" href="style/opis.css" type="text/css" />
     <link rel="stylesheet" title="main" href="style/popup.css" type="text/css">
-   <link rel="stylesheet" href="style/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="style/animate.min.css" type="text/css">
     <link rel="stylesheet" title="alt" href="style/atlmenu.css" type="text/css">
-    <link rel="stylesheet"  href="style/dodruku.css" type="text/css" media="print">
+    <link rel="stylesheet" href="style/dodruku.css" type="text/css" media="print">
     <script type="text/javascript" src="wybor.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
     <?php
@@ -43,23 +43,25 @@ session_start();
 
 </head>
 
-   
+
 
 <body onload="listStyles()" id="page-top">
     <script type="text/javascript">
         $(document).ready(function() {
-            $('select').on('change', function(){
+            $('select').on('change', function() {
                 setStyle(this.value);
-            })});
+            })
+        });
+
     </script>
-    <div class="stylelista" id="stylelista"> 
-       <select name="" id="wybory" >
+    <div class="stylelista" id="stylelista">
+        <select name="" id="wybory">
           <option value="" disabled selected>Wybierz styl</option>
            <option value="main" >Główny</option>
            <option value="alt" >Alternaywny</option>
        </select>
 
-        </div>
+    </div>
     <nav>
 
         <div class="menu">
@@ -76,7 +78,7 @@ session_start();
             </ol>
         </div>
     </nav>
-<div class="pusty"></div>
+    <div class="pusty"></div>
     <header>
 
         <div class="header-contant" id="header-contant">
@@ -87,7 +89,7 @@ session_start();
         <a href="#onas" class="btn">Dowiedz się więcej</a>
 
     </header>
-    
+
     <section class="o-nas" id="onas">
         <div class="container">
             <h2>Nasz serwis</h2>
@@ -192,7 +194,7 @@ session_start();
             ?>
                 <h3>Nie masz jeszcze konta zapraszamy do rejestracjii</h3>
 
-                <form id="rejestracja"method="post" action="nowarejestracja.php">
+                <form id="rejestracja" method="post" action="nowarejestracja.php">
                     <label>  <input placeholder="Imie" type="text" name="name" required="required" value="<?php
                 if (isset($_SESSION['fr_name']))
                 {
@@ -291,7 +293,7 @@ session_start();
     </div>
 -->
     <script src="popup.js"></script>
-    
+
 </body>
 
 </html>

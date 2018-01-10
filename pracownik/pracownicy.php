@@ -21,70 +21,72 @@ session_start();
         <link rel="stylesheet" href="../style/message.css" type="text/css">
         <link rel="stylesheet" href="../style/stylelist.css" type="text/css">
         <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
-        <link rel="stylesheet"  href="../style/dodruku.css" type="text/css" media="print">
+        <link rel="stylesheet" href="../style/dodruku.css" type="text/css" media="print">
         <script src="../jquery-3.2.1.min.js"></script>
         <script src="chat.js" type="text/javascript"></script>
         <script type="text/javascript" src="../wybor.js"></script>
-       
+
         <script>
-            
             function checked() {
-                
-                return document.getElementById("check").checked; 
-                
+
+                return document.getElementById("check").checked;
+
             }
 
-            
+
             function checkValues() {
-                return  document.getElementById("message").value; 
+                return document.getElementById("message").value;
             }
 
-           
-            function update() {
-                document.getElementById("chat").innerHTML = ""; 
-                var isopen;
-                var t="true";
-                var f="false";
-                isopen=new XMLHttpRequest();
-            
-                if(checked()){
-                    isopen.open("GET", "memory.php?isopen="+t, true);
-                    document.getElementById("chatbox").style.display='block';}
-                else{ isopen.open("GET", "memory.php?isopen="+f, true);
-                    document.getElementById("chatbox").style.display='none';}
-                var xmlhttp;
-                xmlhttp=new XMLHttpRequest();
-                
 
-                xmlhttp.onreadystatechange=function() {
-                    if (xmlhttp.readyState==3 && xmlhttp.status==200) { 
-                        if (checked()) { 
-                            document.getElementById("chat").innerHTML=xmlhttp.responseText;
+            function update() {
+                document.getElementById("chat").innerHTML = "";
+                var isopen;
+                var t = "true";
+                var f = "false";
+                isopen = new XMLHttpRequest();
+
+                if (checked()) {
+                    isopen.open("GET", "memory.php?isopen=" + t, true);
+                    document.getElementById("chatbox").style.display = 'block';
+                } else {
+                    isopen.open("GET", "memory.php?isopen=" + f, true);
+                    document.getElementById("chatbox").style.display = 'none';
+                }
+                var xmlhttp;
+                xmlhttp = new XMLHttpRequest();
+
+
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 3 && xmlhttp.status == 200) {
+                        if (checked()) {
+                            document.getElementById("chat").innerHTML = xmlhttp.responseText;
                         }
                     }
-                    if (xmlhttp.readyState==4) { 
-                        xmlhttp.open("GET","messages.php",true);
+                    if (xmlhttp.readyState == 4) {
+                        xmlhttp.open("GET", "messages.php", true);
                         xmlhttp.send();
                     }
-                }	
-                xmlhttp.open("GET", "messages.php", true); 
-                xmlhttp.send(); 
+                }
+                xmlhttp.open("GET", "messages.php", true);
+                xmlhttp.send();
             }
 
-            
+
             function send() {
                 var xmlhttp;
-                xmlhttp=new XMLHttpRequest();
-                
+                xmlhttp = new XMLHttpRequest();
 
-              
-                var messageValue = encodeURIComponent(document.getElementById("message").value); 
 
-                xmlhttp.open("GET", "send.php?message="+messageValue, true); 
+
+                var messageValue = encodeURIComponent(document.getElementById("message").value);
+
+                xmlhttp.open("GET", "send.php?message=" + messageValue, true);
                 xmlhttp.send();
 
-                document.getElementById("message").value = ""; 
+                document.getElementById("message").value = "";
             }
+
         </script>
         <?php
         if (isset($_SESSION['chatsession'])){
@@ -100,19 +102,21 @@ session_start();
     <body>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('select').on('change', function(){
+                $('select').on('change', function() {
                     setStyle(this.value);
-                })});
+                })
+            });
+
         </script>
-        <div class="stylelista" id="stylelista"> 
-            <select name="" id="wybory" >
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
                 <option value="">Wybierz styl</option>
                 <option value="main" >Główny</option>
                 <option value="alt" >Alternatywny</option>
             </select>
 
         </div>
-        
+
         <nav>
 
 
@@ -138,19 +142,20 @@ session_start();
 
                 </div>
                 <div class="openchat" id="openchat">
-                   Chat
-                    <input type="checkbox" name="check" id="check" onchange="update();"/>
+                    Chat
+                    <input type="checkbox" name="check" id="check" onchange="update();" />
                 </div>
                 <div class="chatbox" id="chatbox">
-                    
-                    <textarea rows="20"  id="chat"  disabled></textarea>
 
-                    <p>Wpisz wiadomość:<p> <input type="text" name="message" id="message" />
-                    <button type="button" value="Wyślij" onclick="if ( checkValues()) { send(); } else { alert('Uruchom czat a następnie wpisz nick i wiadomość'); }">Wyślij</button>
-                    <div id="debug"></div>
+                    <textarea rows="20" id="chat" disabled></textarea>
+
+                    <p>Wpisz wiadomość:
+                        <p> <input type="text" name="message" id="message" />
+                            <button type="button" value="Wyślij" onclick="if ( checkValues()) { send(); } else { alert('Uruchom czat a następnie wpisz nick i wiadomość'); }">Wyślij</button>
+                            <div id="debug"></div>
 
                 </div>
-                
+
 
             </header>
         </nav>

@@ -103,7 +103,7 @@ $customer=$_SESSION['customertocar'];
 
                 <label> <input placeholder="Numer rejestracyjny" type="text" name="number" required="required"></label>
                 <input type="submit" value="Dodaj Samochód">
-                
+
             </form>
 
 

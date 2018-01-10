@@ -8,31 +8,34 @@ if (!isset($_SESSION['zalogowany']))
 }    
 ?>
 
-<!DOCTYPE html>
-<html lang="pl-Pl">
+    <!DOCTYPE html>
+    <html lang="pl-Pl">
+
     <head>
-         <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="description" content="Strona serwisu samochodowego">
         <title>
-            Seriws samochodów 
+            Seriws samochodów
         </title>
-        <link rel="stylesheet"  title="main" href="../style/pracownicy.css"/>
+        <link rel="stylesheet" title="main" href="../style/pracownicy.css" />
         <link rel="stylesheet" href="../style/strona-glowna.css" type="text/css">
         <link rel="stylesheet" title="main" href="../style/tabelki.css" type="text/css">
         <link rel="stylesheet" title="alt" href="../style/altindex.css" type="text/css">
         <script src="../jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../wybor.js"></script>
     </head>
-    
+
     <body>
         <script type="text/javascript">
             $(document).ready(function() {
-                $('select').on('change', function(){
+                $('select').on('change', function() {
                     setStyle(this.value);
-                })});
+                })
+            });
+
         </script>
-        <div class="stylelista" id="stylelista"> 
-            <select name="" id="wybory" >
+        <div class="stylelista" id="stylelista">
+            <select name="" id="wybory">
                 <option value="" disabled selected>Wybierz styl</option>
                 <option value="main" >main</option>
                 <option value="alt" >alt</option>
@@ -49,16 +52,16 @@ if (!isset($_SESSION['zalogowany']))
 
                 <ol>
                     <li><a class="page-scroll" href="mojenaprawy.php">Moje naprawy</a></li>
-                    <li><a  href="mojesamochody.php">Moje samochody</a></li>
+                    <li><a href="mojesamochody.php">Moje samochody</a></li>
                     <li><a class="page-scroll" href="customer_car.php">Dodaj Samochód</a></li>
                     <li><a class="page-scroll" href="../logout.php">Wyloguj</a></li>
                 </ol>
 
             </div>
-           <div class="pusty"></div>
+            <div class="pusty"></div>
         </nav>
-       <h2>Wszytskie moje naprawy</h2>
-       <?php
+        <h2>Wszytskie moje naprawy</h2>
+        <?php
       
         $idcustomer=$_SESSION['idcustomer'];
      require_once "../conect.php";
@@ -89,7 +92,7 @@ if (!isset($_SESSION['zalogowany']))
 
    echo"</table>"
        ?>
-       
-        </body>
 
-</html>
+    </body>
+
+    </html>
