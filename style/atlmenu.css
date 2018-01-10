@@ -1,0 +1,326 @@
+*{
+    margin top: -10px;
+    text-align: center;
+
+}
+.photo{
+
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px 2px 0px 2px;
+    text-align: center;
+    background-image: url(../galeria/header.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    height: 100%;
+    color: aliceblue;
+    font-size: 36px;
+    width: 100%;
+}
+.menu {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+
+    float: left;
+    background-color: red;
+    z-index: 100;
+    text-align: center;
+}
+.menu ol{
+    margin: 0;
+    padding: 0;
+}
+.menu ol li {
+    list-style: none;
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 7px;
+    font-weight: bold;
+    background-color: #8f22cc;
+    color: #a4ecca;
+    border-left: 10px solid #7522cc;
+
+}
+.menu a{
+    text-decoration: none;
+}
+.menu img{
+    max-height: 150px;
+    text-align: center;
+}
+
+
+header{
+    margin: -50px 0px 0px 200px;
+    text-align: center;
+    background-image: url(../galeria/alfa-romeo-giulia-side-0-187032.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 200px;
+    height: 300px;
+    color: aliceblue;
+    font-size: 36px;
+    width: 100%-200px;
+
+}
+header a{
+    display: none;
+}
+.header-contant p{
+    font-size: 30px;
+    margin: 0px;
+
+}
+
+
+
+header h1{
+    position: relative;
+    top:50px;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+   
+    
+}
+body{
+    background-color: aqua;
+}
+tabele{
+
+}
+.o-nas {
+    margin: 0px 0px 0px 200px;
+    text-align: center;
+    background-color: coral;
+    min-height: 600px;
+    width: 100%-200px;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+
+
+}
+.container  {
+    display: table-cell;
+    vertical-align:middle;
+    margin: 0px 0px 0px 200px;
+
+}
+.container h2{
+    display: none;
+}
+.naprawy {
+    float: left;
+    margin: 0px 0px 0px 200px;
+    text-align: center;
+    padding: 0px;
+    background-color:darkolivegreen;
+    min-height: 600px;
+    width: 100%-200px;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+
+
+
+}
+
+.naprawy-tabela {
+    float: left;
+    max-width: 350px;
+    display: inline-block;
+
+}
+.naprawy-tabela img {
+    border-radius: 50px;
+
+}
+.galeria{
+    margin: 0px 0px 0px 200px;
+    padding: 0px;
+    background-color: #2a2626;
+    min-height: 600px;
+    width: 100%-200px;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+
+}
+.galeria h2{
+    display: none;
+}
+#galeria{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+#galeria img{
+    border-radius: 20px;
+}
+
+.stylelista {
+    position: fixed;
+    float: left;
+    bottom: 10px;
+    left: 20px;
+    height: 70px;
+    width: 180px;
+    z-index: 180;
+
+
+}
+
+.stylelista #wybory{
+    position: relative;
+    width: 180px;
+    font-size: 20px;
+    padding: 7px;
+    font-weight: bold;
+    background-color: #8f22cc;
+    color: #a4ecca;
+    border-left: 10px solid #7522cc;
+
+}
+p{
+
+    bottom: 20px;
+
+}
+table{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    right: 0;
+    margin: auto;
+    background-color:blanchedalmond;
+    color: blue;
+    font-size: 20px;
+    margin left: 5px;
+}
+h2{
+    position: relative;
+    top:80px;
+}
+table tr td{
+    max-width: 300px;
+    height: auto;
+}
+#kontakt p {
+    margin: 0px 0px 0px 200px;
+}
+#kontakt h2{
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#popup h2{
+    display: none;
+}
+
+#popup .popup-inner {
+    position: absolute;
+    background-color: #fff;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    max-width:500px;
+    max-height:450px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+#popup >.popup-inner> .in  {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    max-height: 450px;
+    border-radius: 10px;
+    text-align: center;
+
+    overflow-y: scroll;
+}
+
+#popup .popup-inner .close {
+    position: absolute;
+    right: 5px;
+
+}
+.popup-inner .close {
+    position: relative;
+    right: 5px;
+
+}
+#popup .popup-inner img {
+    height: 200px;    
+
+}
+
+#popup .popup-inner form input {
+    display: block;
+    margin: 8px auto;
+    border: 1px solid darkblue;
+    padding: 4px;
+    width: 250px;
+
+}
+
+#popup .popup-inner form input[type="submit"], #pobierz-informator {
+    display: block;
+    margin: auto;
+    border: 1px solid #ff7900;
+    border-radius: 300px;
+    text-transform: uppercase;
+    background: darkblue;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Open Sans','Helvetica Neue', Arial,sans-serif;
+    font-weight: 700;
+
+}
+
+#popup .popup-inner form input[type="submit"]:hover, #pobierz-informator:hover {
+    background: #14262e;
+    border: 1px solid #34a5d9;
+}
+#rejestracja{
+    color: red;
+}
+#pobierz-informator {
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    width: 55%;
+}
+
+#pobierz-informator:hover {
+    color: #fff;
+    text-decoration: none;
+}
+

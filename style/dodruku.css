@@ -1,0 +1,219 @@
+*{
+    margin top: -10px;
+    text-align: center;
+
+}
+.photo{
+
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px 2px 0px 2px;
+    text-align: center;
+    background-image: url(../galeria/header.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    height: 100%;
+    color: aliceblue;
+    font-size: 36px;
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+
+    float: left;
+    background-color: red;
+    z-index: 100;
+    text-align: center;
+}
+.menu ol{
+    margin: 0;
+    padding: 0;
+}
+.menu ol li {
+    list-style: none;
+    min-height: 25px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 7px;
+    font-weight: bold;
+    background-color: #8f22cc;
+    color: #a4ecca;
+    border-left: 10px solid #7522cc;
+
+}
+.menu a{
+    text-decoration: none;
+}
+.menu img{
+    max-height: 150px;
+    text-align: center;
+}
+
+
+header{
+    margin: -50px 0px 0px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 200px;
+    height: 300px;
+    color: aliceblue;
+    font-size: 36px;
+    width: 100%;
+
+}
+header a{
+    display: none;
+}
+.header-contant p{
+    font-size: 30px;
+    margin: 0px;
+
+}
+
+
+
+header h1{
+    position: relative;
+    top:50px;
+    text-transform: uppercase;
+}
+p{
+    color: black;
+    background-color: white;
+}
+body{
+    background-color: aqua;
+}
+tabele{
+
+}
+.o-nas {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+
+
+}
+.container  {
+    display: table-cell;
+    vertical-align:middle;
+
+}
+.naprawy {
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+
+
+
+}
+
+.naprawy-tabela {
+
+    max-width: 350px;
+    display: inline-block;
+
+}
+.naprawy-tabela img {
+    border-radius: 30px;
+
+}
+.galeria{
+    position: relative;
+    float: left;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+
+}
+#galeria{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+#galeria img{
+    border-radius: 20px;
+}
+
+.stylelista {
+    display: none;
+    position: fixed;
+    float: left;
+    bottom: 10px;
+    left: 20px;
+    height: 70px;
+    width: 180px;
+    z-index: 180;
+
+
+}
+
+.stylelista #wybory{
+    display: none;
+    position: relative;
+    width: 180px;
+    font-size: 20px;
+    padding: 7px;
+    font-weight: bold;
+    background-color: #8f22cc;
+    color: #a4ecca;
+    border-left: 10px solid #7522cc;
+
+}
+p{
+
+    bottom: 20px;
+
+}
+table{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    background-color:white;
+    color: black;
+    font-size: 20px;
+    margin left: 5px;
+}
+h2{
+    position: relative;
+    top:80px;
+}
+table tr td{
+    max-width: 300px;
+    height: auto;
+}

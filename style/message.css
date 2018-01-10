@@ -1,0 +1,29 @@
+.chatbox{
+    position: fixed;
+    float: right;
+    bottom:20px;
+    right: 20px;
+    height: 300px;
+    width: 250px;
+    background-color: darkgrey;
+    font-size: 10px;
+    display: none;
+    
+}
+.chatbox textarea{
+    position: relative;
+    top:10px;
+    height: 200px;
+    width: 220px;
+}
+.openchat{
+    position: fixed;
+    float: right;
+    top:200px;
+    right: 20px;
+    height: 60px;
+    width: 50px;
+    font-size: 20px;
+    background-color: darkgray;
+    font font-size: 10px;
+}

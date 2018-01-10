@@ -1,0 +1,102 @@
+
+.o-nas {
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color: darkblue;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+    
+
+}
+.container  {
+    display: table-cell;
+    vertical-align:middle;
+    
+}
+.spis-napraw{
+
+    
+    
+
+
+}
+.naprawy {
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color:#2a2626;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    
+
+
+}
+
+.naprawy-tabela {
+    
+    max-width: 350px;
+    display: inline-block;
+
+}
+.naprawy-tabela img {
+    border-radius: 30px;
+
+}
+.galeria{
+    position: relative;
+    float: left;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color: darkblue;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+    
+}
+#galeria{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+#galeria img{
+     border-radius: 20px;
+}
+.kontakt{
+    position: relative;
+    float: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2a2626;
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20x;
+    display: table;
+    vertical-align:middle;
+}
+#kontakt{
+    display: table-cell;
+    vertical-align:middle;
+}
+
+

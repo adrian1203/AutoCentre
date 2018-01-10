@@ -1,0 +1,134 @@
+
+
+.popup-inner {
+    position: absolute;
+    background-color: #fff;
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    max-width:500px;
+    max-height:450px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.popup-inner  .close{
+    position: absolute;
+    left:400px;
+
+}
+.popup-inner h3 {
+    color: black;
+
+}
+
+ .popup-inner img {
+    height: 200px;    
+
+}
+
+ .popup-inner form input {
+    display: block;
+    margin: 8px auto;
+    border: 1px solid darkblue;
+    padding: 4px;
+    width: 250px;
+     
+  
+
+}
+.popup-inner form textarea {
+    display: block;
+    margin: 8px auto;
+    border: 1px solid darkblue;
+    padding: 4px;
+    width: 250px;
+    min-height:70px;
+    
+
+}
+
+.popup-inner form  .desc {
+    display: block;
+    margin: 8px auto;
+    border: 1px solid darkblue;
+    padding: 4px;
+    width: 250px;
+    min-height:80px;
+
+}
+.popup-inner form select {
+    display: block;
+    margin: 8px auto;
+    border: 1px solid darkblue;
+    padding: 4px;
+    width: 260px;
+    height: 35px;
+
+}
+.s option:first-child{
+    color: gray;
+}
+.popup-inner form input[type="submit"], #pobierz-informator {
+    display: block;
+    margin: auto;
+    border: 1px solid #ff7900;
+    border-radius: 300px;
+    text-transform: uppercase;
+    background: darkblue;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Open Sans','Helvetica Neue', Arial,sans-serif;
+    font-weight: 700;
+
+}
+.popup-inner form a , #pobierz-informator {
+    display: block;
+    margin: auto;
+    border: 1px solid #ff7900;
+    border-radius: 300px;
+    background: darkblue ;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Open Sans','Helvetica Neue', Arial,sans-serif;
+    font-weight: 500;
+    max-width: 200px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+
+}
+.popup-inner form a:hover, #pobierz-informator:hover {
+    background: #14262e;
+    border: 1px solid #34a5d9;
+    text-transform: uppercase;
+}
+
+.popup-inner form h5 {
+    color: black
+    margin: 2px;;
+    
+}
+
+.popup-inner form input[type="submit"]:hover, #pobierz-informator:hover {
+    background: #14262e;
+    border: 1px solid #34a5d9;
+    
+}
+
+#pobierz-informator {
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    width: 55%;
+}
+
+#pobierz-informator:hover {
+    color: #fff;
+    text-decoration: none;
+}
