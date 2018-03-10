@@ -146,8 +146,8 @@ if (isset($_POST['what']))
         <div class="stylelista" id="stylelista">
             <select name="" id="wybory">
                 <option value="">Wybierz styl</option>
-                <option value="main" >main</option>
-                <option value="alt" >alt</option>
+                <option value="main" >Główny</option>
+                <option value="alt" >Alternatywny</option>
             </select>
 
         </div>
