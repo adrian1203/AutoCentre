@@ -72,7 +72,7 @@ session_start();
                 }else{
                     $_SESSION['blad'] = "Nieprawidlowy login lub haslo";
                     $_SESSION['error']="cos nie tak";
-                    $_SESSION['errorlog']="chuj";
+                    $_SESSION['errorlog']="";
                     header('Location:index.php');
                 }
 
