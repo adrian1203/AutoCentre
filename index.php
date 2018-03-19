@@ -105,36 +105,36 @@ session_start();
                 <div class="naprawy-tabela">
                     <h3>Silnik</h3>
                     <img src="galeria/silnik.jpg" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy kompleksową diagnostyke i naprawe silnikow różnych marek</p>
                 </div>
                 <div class="naprawy-tabela">
                     <h3>Klimatyzacja</h3>
                     <img src="galeria/klimatyzacja.png" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy kompleksową diagnostyke i naprawe klimatyzjacji samochodowych</p>
 
                 </div>
                 <div class="naprawy-tabela">
-                    <h3>Zaiweszenie</h3>
+                    <h3>Zawieszenie</h3>
                     <img src="galeria/zawieszenie.jpg" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy kompleksową diagnostyke i naprawe układu amortyzacji</p>
 
                 </div>
                 <div class="naprawy-tabela">
                     <h3>Serwis okresowy</h3>
                     <img src="galeria/serwis.jpg" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy kompleksowy serwis okresowy wszystkich samochodów</p>
 
                 </div>
                 <div class="naprawy-tabela">
                     <h3>Wymiana opon</h3>
                     <img src="galeria/opna.jpg" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy  wymiane i naprawe opon i felg  samochodwych różnych marek</p>
 
                 </div>
                 <div class="naprawy-tabela">
                     <h3>Uslugi blacharskie</h3>
                     <img src="galeria/lakierowanie.jpg" alt="zdjecie">
-                    <p>Oferujemy kompleksowa diagnostyke i naprawe silnikow roznych marek</p>
+                    <p>Oferujemy kompleksową diagnostyke i naprawe karoserii samochowej</p>
 
                 </div>
             </div>
@@ -149,18 +149,18 @@ session_start();
             <p></p>
         </div>
         <div id="galeria">
-            <img src="galeria/148821188954978621_A_N.jpg" alt="zdjecie">
-            <img src="galeria/galeria1.jpg" alt="zdjecie">
-            <img src="galeria/148821188954978621_A_N.jpg" alt="zdjecie">
-            <img src="galeria/audi.jpg" alt="zdjecie">
+            <img src="galeria/148821188954978621_A_N.jpg" alt="zdjecie1">
+            <img src="galeria/galeria1.jpg" alt="zdjecie2">
+            <img src="galeria/audi.jpg" alt="zdjecie3">
+            <img src="galeria/148821188954978621_A_N.jpg" alt="zdjecie4">
         </div>"
     </section>
     <section class="kontakt" id="kontakkt">
         <div id="kontakt">
             <h2>Zostańmy w kontakcie</h2>
             <p>Jesteśmy zawsze do Twojej dyspozycji i chętnie odpowiemy na Twoje pytania!</p>
-            <p>Krakow <br> ul.Uliczna 23<br> Tel. 256865853</p>
-            <p> Email: seriws@krakow.pl</p>
+            <p>Kraków <br> ul.Uliczna 23<br> Tel. 256 865 853</p>
+            <p> Email: serwis@krakow.pl</p>
         </div>
     </section>
 
